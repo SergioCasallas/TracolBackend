@@ -17,7 +17,10 @@ if(numeroTRA&&codigoVerificacion){
     } 
     })
 
-}else{response.json({mensaje:"datos no encontrado"})
+}else{response.json({
+  mensaje:
+    "Su acta no fue verificada por favor valide sus datos e intente nuevamente..",
+});
 response.end()
 
 }
